@@ -14,6 +14,7 @@ struct Constants {
     static let femaleGender = "female"
     
     struct Random {
+        static let results = "results"
         static let gender = "gender"
         static let name = "name"
         static let first = "first"

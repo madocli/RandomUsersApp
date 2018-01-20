@@ -36,8 +36,9 @@ class RemoteDataSource {
     
     fileprivate func fetchRandomUsers(handle: @escaping Handler<[RandomUser]>) {
         service.makePetition { (didPetition, response) in
+            print(response)
             if didPetition {
-                let json = response as? [NSDictionary]
+                let json = response[Constants.Random.results] as? [NSDictionary]
                 if json != nil {
                     for element in json! {
                         let userRandom = RandomUser(json: element)
