@@ -12,14 +12,19 @@ struct RandomUser {
     
     var gender = ""
     var name: UserName = UserName()
+    var fullName: String {
+        return "\(name.first) \(name.last)"
+    }
     var email = ""
+    var cell = ""
     var picture: UserPicture = UserPicture()
     
     
-    init(gender: String, name: UserName, email: String, picture: UserPicture) {
+    init(gender: String, name: UserName, email: String, cell: String, picture: UserPicture) {
         self.gender = gender
         self.name = name
         self.email = email
+        self.cell = cell
         self.picture = picture
     }
     
@@ -32,6 +37,9 @@ struct RandomUser {
         }
         if json[Constants.Random.email] != nil {
             self.email = json[Constants.Random.email] as! String
+        }
+        if json[Constants.Random.cell] != nil {
+            self.cell = json[Constants.Random.cell] as! String
         }
         if json[Constants.Random.picture] != nil {
             self.picture = UserPicture(json: json[Constants.Random.picture] as! NSDictionary)
