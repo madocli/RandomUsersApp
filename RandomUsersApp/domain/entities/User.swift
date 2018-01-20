@@ -8,7 +8,9 @@
 
 import Foundation
 
+
 struct User {
+    let id = UUIDIdentityGenerator.newId()
     let userName: String
     let email: String
     let cell: String
