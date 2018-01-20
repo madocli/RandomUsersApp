@@ -28,4 +28,8 @@ class UseCaseFactory {
         return ShowUsersListUseCase(entityGateway: entityGateway, handler: handler)
     }
     
+    func showMoreUsersUseCase(handler: @escaping Handler<[User]>) -> UseCase {
+        return ShowMoreUsersUseCase(entityGateway: entityGateway, handler: handler)
+    }
+    
 }
