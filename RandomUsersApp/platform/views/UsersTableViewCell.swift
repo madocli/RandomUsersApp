@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class UsersTableViewCell: UITableViewCell {
 
@@ -38,7 +39,8 @@ extension UsersTableViewCell: UserListItemView {
     }
     
     func display(image: String) {
-        // TODO
+        let url = URL(string: image)
+        imageView?.kf.setImage(with: url, placeholder: userImage.image)
     }
     
 }

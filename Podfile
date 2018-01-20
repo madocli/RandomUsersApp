@@ -7,6 +7,7 @@ target 'RandomUsersApp' do
 
   # Pods for RandomUsersApp
   pod 'Alamofire', '~> 4.4'
+  pod 'Kingfisher', '~> 4.0'
 
   target 'RandomUsersAppTests' do
     inherit! :search_paths

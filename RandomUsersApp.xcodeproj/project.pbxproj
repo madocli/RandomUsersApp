@@ -32,6 +32,7 @@
 		2AB49B2D2013C6E70064A42D /* UserListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B2C2013C6E70064A42D /* UserListItemView.swift */; };
 		2AB49B2F2013C7C50064A42D /* UsersListConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B2E2013C7C50064A42D /* UsersListConnector.swift */; };
 		2AB49B312013CA4A0064A42D /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B302013CA4A0064A42D /* UsersTableViewCell.swift */; };
+		2AB49B332013DAD30064A42D /* ShowMoreUsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B322013DAD30064A42D /* ShowMoreUsersUseCase.swift */; };
 		678515E9108A13C23558895A /* Pods_RandomUsersAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A23C7F73C611B35AA334DC /* Pods_RandomUsersAppUITests.framework */; };
 		878E8F17050B641DC672ED2D /* Pods_RandomUsersAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8770D172E09BFF6989C5D92 /* Pods_RandomUsersAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		2AB49B2C2013C6E70064A42D /* UserListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListItemView.swift; sourceTree = "<group>"; };
 		2AB49B2E2013C7C50064A42D /* UsersListConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListConnector.swift; sourceTree = "<group>"; };
 		2AB49B302013CA4A0064A42D /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		2AB49B322013DAD30064A42D /* ShowMoreUsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMoreUsersUseCase.swift; sourceTree = "<group>"; };
 		45E531ECCF427EF16DF6AAA7 /* Pods_RandomUsersApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUsersApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		542FBB917F29A10440C39AA0 /* Pods-RandomUsersAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUsersAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomUsersAppUITests/Pods-RandomUsersAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		67A23C7F73C611B35AA334DC /* Pods_RandomUsersAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUsersAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				2AB49B262013C4AC0064A42D /* ShowUsersListUseCase.swift */,
+				2AB49B322013DAD30064A42D /* ShowMoreUsersUseCase.swift */,
 			);
 			path = useCase;
 			sourceTree = "<group>";
@@ -514,10 +517,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RandomUsersApp/Pods-RandomUsersApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -609,6 +614,7 @@
 				2AB49B2B2013C5E00064A42D /* UsersListView.swift in Sources */,
 				2AB49B0F2013A9150064A42D /* RandomUserService.swift in Sources */,
 				2AB49B272013C4AC0064A42D /* ShowUsersListUseCase.swift in Sources */,
+				2AB49B332013DAD30064A42D /* ShowMoreUsersUseCase.swift in Sources */,
 				2AB49B212013C2170064A42D /* UseCase.swift in Sources */,
 				2AB49B132013B0260064A42D /* UserRepository.swift in Sources */,
 				2AB49B1C2013B7300064A42D /* User.swift in Sources */,

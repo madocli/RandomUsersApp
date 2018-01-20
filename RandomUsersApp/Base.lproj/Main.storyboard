@@ -34,22 +34,22 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tje-lQ-xVF">
-                                            <rect key="frame" x="84" y="8" width="275" height="82.5"/>
+                                            <rect key="frame" x="120" y="8" width="239" height="82.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWM-Y6-TTP">
-                                                    <rect key="frame" x="0.0" y="0.0" width="275" height="27.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="239" height="27.5"/>
                                                     <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ra-TQ-MeP">
-                                                    <rect key="frame" x="0.0" y="35.5" width="275" height="19.5"/>
+                                                    <rect key="frame" x="0.0" y="35.5" width="239" height="19.5"/>
                                                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF3-i2-IeL">
-                                                    <rect key="frame" x="0.0" y="63" width="275" height="19.5"/>
+                                                    <rect key="frame" x="0.0" y="63" width="239" height="19.5"/>
                                                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -57,20 +57,22 @@
                                             </subviews>
                                         </stackView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lkc-4Q-JsU">
-                                            <rect key="frame" x="8" y="19.5" width="60" height="60"/>
+                                            <rect key="frame" x="8" y="8" width="80" height="80"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="60" id="ccL-t9-ELw"/>
-                                                <constraint firstAttribute="height" constant="60" id="lRz-7S-tGK"/>
+                                                <constraint firstAttribute="width" constant="80" id="ccL-t9-ELw"/>
+                                                <constraint firstAttribute="height" constant="80" id="lRz-7S-tGK"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="tje-lQ-xVF" firstAttribute="leading" secondItem="Lkc-4Q-JsU" secondAttribute="trailing" constant="16" id="Df7-DC-VoI"/>
+                                        <constraint firstItem="tje-lQ-xVF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lkc-4Q-JsU" secondAttribute="trailing" constant="16" id="FDL-sR-6Xw"/>
+                                        <constraint firstItem="Lkc-4Q-JsU" firstAttribute="top" secondItem="NAv-x2-vGe" secondAttribute="top" constant="8" id="Ray-83-9by"/>
                                         <constraint firstItem="tje-lQ-xVF" firstAttribute="top" secondItem="NAv-x2-vGe" secondAttribute="top" constant="8" id="VFu-S4-Jqr"/>
                                         <constraint firstAttribute="trailing" secondItem="tje-lQ-xVF" secondAttribute="trailing" constant="16" id="YKk-DF-86P"/>
                                         <constraint firstItem="Lkc-4Q-JsU" firstAttribute="leading" secondItem="NAv-x2-vGe" secondAttribute="leading" constant="8" id="bJC-Pf-H21"/>
-                                        <constraint firstItem="Lkc-4Q-JsU" firstAttribute="centerY" secondItem="NAv-x2-vGe" secondAttribute="centerY" id="lla-3B-7lS"/>
                                         <constraint firstAttribute="bottom" secondItem="tje-lQ-xVF" secondAttribute="bottom" constant="8" id="ub7-Nj-Vre"/>
+                                        <constraint firstItem="tje-lQ-xVF" firstAttribute="leading" secondItem="NAv-x2-vGe" secondAttribute="leading" constant="120" id="z21-Wm-xfF"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lkc-4Q-JsU" secondAttribute="bottom" constant="8" id="zNh-ZF-UnP"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
