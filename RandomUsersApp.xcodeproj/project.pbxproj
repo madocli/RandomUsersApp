@@ -27,6 +27,9 @@
 		2AB49B232013C2660064A42D /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B222013C2660064A42D /* UseCaseFactory.swift */; };
 		2AB49B252013C3A90064A42D /* UUIDIdentityGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B242013C3A90064A42D /* UUIDIdentityGenerator.swift */; };
 		2AB49B272013C4AC0064A42D /* ShowUsersListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B262013C4AC0064A42D /* ShowUsersListUseCase.swift */; };
+		2AB49B292013C5970064A42D /* UsersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B282013C5970064A42D /* UsersListPresenter.swift */; };
+		2AB49B2B2013C5E00064A42D /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B2A2013C5E00064A42D /* UsersListView.swift */; };
+		2AB49B2D2013C6E70064A42D /* UserListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B2C2013C6E70064A42D /* UserListItemView.swift */; };
 		678515E9108A13C23558895A /* Pods_RandomUsersAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A23C7F73C611B35AA334DC /* Pods_RandomUsersAppUITests.framework */; };
 		878E8F17050B641DC672ED2D /* Pods_RandomUsersAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8770D172E09BFF6989C5D92 /* Pods_RandomUsersAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +77,9 @@
 		2AB49B222013C2660064A42D /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		2AB49B242013C3A90064A42D /* UUIDIdentityGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDIdentityGenerator.swift; sourceTree = "<group>"; };
 		2AB49B262013C4AC0064A42D /* ShowUsersListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowUsersListUseCase.swift; sourceTree = "<group>"; };
+		2AB49B282013C5970064A42D /* UsersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListPresenter.swift; sourceTree = "<group>"; };
+		2AB49B2A2013C5E00064A42D /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		2AB49B2C2013C6E70064A42D /* UserListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListItemView.swift; sourceTree = "<group>"; };
 		45E531ECCF427EF16DF6AAA7 /* Pods_RandomUsersApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUsersApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		542FBB917F29A10440C39AA0 /* Pods-RandomUsersAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUsersAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomUsersAppUITests/Pods-RandomUsersAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		67A23C7F73C611B35AA334DC /* Pods_RandomUsersAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUsersAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				2AB49B0A2013A6880064A42D /* presenters */,
+				2AB49B2A2013C5E00064A42D /* UsersListView.swift */,
+				2AB49B2C2013C6E70064A42D /* UserListItemView.swift */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -221,6 +229,7 @@
 		2AB49B0A2013A6880064A42D /* presenters */ = {
 			isa = PBXGroup;
 			children = (
+				2AB49B282013C5970064A42D /* UsersListPresenter.swift */,
 			);
 			path = presenters;
 			sourceTree = "<group>";
@@ -585,9 +594,12 @@
 				2AB49B172013B0730064A42D /* RandomUser.swift in Sources */,
 				2AB49ADA2013A5F00064A42D /* ViewController.swift in Sources */,
 				2AB49AD82013A5F00064A42D /* AppDelegate.swift in Sources */,
+				2AB49B292013C5970064A42D /* UsersListPresenter.swift in Sources */,
 				2AB49B1F2013BE680064A42D /* EntityGateway.swift in Sources */,
+				2AB49B2D2013C6E70064A42D /* UserListItemView.swift in Sources */,
 				2AB49B252013C3A90064A42D /* UUIDIdentityGenerator.swift in Sources */,
 				2AB49B232013C2660064A42D /* UseCaseFactory.swift in Sources */,
+				2AB49B2B2013C5E00064A42D /* UsersListView.swift in Sources */,
 				2AB49B0F2013A9150064A42D /* RandomUserService.swift in Sources */,
 				2AB49B272013C4AC0064A42D /* ShowUsersListUseCase.swift in Sources */,
 				2AB49B212013C2170064A42D /* UseCase.swift in Sources */,
