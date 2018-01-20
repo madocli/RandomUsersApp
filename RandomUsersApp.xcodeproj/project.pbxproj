@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		27395CF60CECD733FCBF2A0F /* Pods_RandomUsersApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E531ECCF427EF16DF6AAA7 /* Pods_RandomUsersApp.framework */; };
 		2AB49AD82013A5F00064A42D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49AD72013A5F00064A42D /* AppDelegate.swift */; };
-		2AB49ADA2013A5F00064A42D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49AD92013A5F00064A42D /* ViewController.swift */; };
+		2AB49ADA2013A5F00064A42D /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49AD92013A5F00064A42D /* UsersTableViewController.swift */; };
 		2AB49ADD2013A5F00064A42D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB49ADB2013A5F00064A42D /* Main.storyboard */; };
 		2AB49ADF2013A5F00064A42D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB49ADE2013A5F00064A42D /* Assets.xcassets */; };
 		2AB49AE22013A5F00064A42D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB49AE02013A5F00064A42D /* LaunchScreen.storyboard */; };
@@ -30,6 +30,8 @@
 		2AB49B292013C5970064A42D /* UsersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B282013C5970064A42D /* UsersListPresenter.swift */; };
 		2AB49B2B2013C5E00064A42D /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B2A2013C5E00064A42D /* UsersListView.swift */; };
 		2AB49B2D2013C6E70064A42D /* UserListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B2C2013C6E70064A42D /* UserListItemView.swift */; };
+		2AB49B2F2013C7C50064A42D /* UsersListConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B2E2013C7C50064A42D /* UsersListConnector.swift */; };
+		2AB49B312013CA4A0064A42D /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B302013CA4A0064A42D /* UsersTableViewCell.swift */; };
 		678515E9108A13C23558895A /* Pods_RandomUsersAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A23C7F73C611B35AA334DC /* Pods_RandomUsersAppUITests.framework */; };
 		878E8F17050B641DC672ED2D /* Pods_RandomUsersAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8770D172E09BFF6989C5D92 /* Pods_RandomUsersAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,7 +56,7 @@
 /* Begin PBXFileReference section */
 		2AB49AD42013A5F00064A42D /* RandomUsersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUsersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB49AD72013A5F00064A42D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2AB49AD92013A5F00064A42D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2AB49AD92013A5F00064A42D /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		2AB49ADC2013A5F00064A42D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AB49ADE2013A5F00064A42D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AB49AE12013A5F00064A42D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,8 @@
 		2AB49B282013C5970064A42D /* UsersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListPresenter.swift; sourceTree = "<group>"; };
 		2AB49B2A2013C5E00064A42D /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		2AB49B2C2013C6E70064A42D /* UserListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListItemView.swift; sourceTree = "<group>"; };
+		2AB49B2E2013C7C50064A42D /* UsersListConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListConnector.swift; sourceTree = "<group>"; };
+		2AB49B302013CA4A0064A42D /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		45E531ECCF427EF16DF6AAA7 /* Pods_RandomUsersApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUsersApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		542FBB917F29A10440C39AA0 /* Pods-RandomUsersAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUsersAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomUsersAppUITests/Pods-RandomUsersAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		67A23C7F73C611B35AA334DC /* Pods_RandomUsersAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUsersAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,7 +241,8 @@
 		2AB49B0B2013A6900064A42D /* views */ = {
 			isa = PBXGroup;
 			children = (
-				2AB49AD92013A5F00064A42D /* ViewController.swift */,
+				2AB49AD92013A5F00064A42D /* UsersTableViewController.swift */,
+				2AB49B302013CA4A0064A42D /* UsersTableViewCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 		2AB49B0C2013A6950064A42D /* connectors */ = {
 			isa = PBXGroup;
 			children = (
+				2AB49B2E2013C7C50064A42D /* UsersListConnector.swift */,
 			);
 			path = connectors;
 			sourceTree = "<group>";
@@ -592,8 +598,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AB49B172013B0730064A42D /* RandomUser.swift in Sources */,
-				2AB49ADA2013A5F00064A42D /* ViewController.swift in Sources */,
+				2AB49ADA2013A5F00064A42D /* UsersTableViewController.swift in Sources */,
 				2AB49AD82013A5F00064A42D /* AppDelegate.swift in Sources */,
+				2AB49B312013CA4A0064A42D /* UsersTableViewCell.swift in Sources */,
 				2AB49B292013C5970064A42D /* UsersListPresenter.swift in Sources */,
 				2AB49B1F2013BE680064A42D /* EntityGateway.swift in Sources */,
 				2AB49B2D2013C6E70064A42D /* UserListItemView.swift in Sources */,
@@ -607,6 +614,7 @@
 				2AB49B1C2013B7300064A42D /* User.swift in Sources */,
 				2AB49B152013B0660064A42D /* RemoteDataSource.swift in Sources */,
 				2AB49B192013B6A20064A42D /* Handler.swift in Sources */,
+				2AB49B2F2013C7C50064A42D /* UsersListConnector.swift in Sources */,
 				2AB49B112013AEA60064A42D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,7 +718,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -761,7 +769,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
