@@ -14,7 +14,7 @@ class RandomUserService {
     var alamoRequest: Alamofire.Request?
     let url: URLConvertible = Constants.url
     
-    func makePetition(handle:@escaping (Bool, AnyObject) -> Void) {
+    func makePetition(handle:@escaping ServiceHandler) {
         alamoRequest = Alamofire.request(
             url,
             method: .get,

@@ -11,6 +11,8 @@ import Foundation
 struct Constants {
     static let url = "http://api.randomuser.me?results=20"
     
+    static let femaleGender = "female"
+    
     struct Random {
         static let gender = "gender"
         static let name = "name"

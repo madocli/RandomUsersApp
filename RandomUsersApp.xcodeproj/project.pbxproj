@@ -20,6 +20,9 @@
 		2AB49B132013B0260064A42D /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B122013B0260064A42D /* UserRepository.swift */; };
 		2AB49B152013B0660064A42D /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B142013B0660064A42D /* RemoteDataSource.swift */; };
 		2AB49B172013B0730064A42D /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B162013B0730064A42D /* RandomUser.swift */; };
+		2AB49B192013B6A20064A42D /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B182013B6A20064A42D /* Handler.swift */; };
+		2AB49B1C2013B7300064A42D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B1B2013B7300064A42D /* User.swift */; };
+		2AB49B1F2013BE680064A42D /* EntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB49B1E2013BE680064A42D /* EntityGateway.swift */; };
 		678515E9108A13C23558895A /* Pods_RandomUsersAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A23C7F73C611B35AA334DC /* Pods_RandomUsersAppUITests.framework */; };
 		878E8F17050B641DC672ED2D /* Pods_RandomUsersAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8770D172E09BFF6989C5D92 /* Pods_RandomUsersAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +63,9 @@
 		2AB49B122013B0260064A42D /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		2AB49B142013B0660064A42D /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		2AB49B162013B0730064A42D /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
+		2AB49B182013B6A20064A42D /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
+		2AB49B1B2013B7300064A42D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2AB49B1E2013BE680064A42D /* EntityGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityGateway.swift; sourceTree = "<group>"; };
 		45E531ECCF427EF16DF6AAA7 /* Pods_RandomUsersApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUsersApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		542FBB917F29A10440C39AA0 /* Pods-RandomUsersAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUsersAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomUsersAppUITests/Pods-RandomUsersAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		67A23C7F73C611B35AA334DC /* Pods_RandomUsersAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUsersAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,8 +134,6 @@
 				2AB49B072013A6730064A42D /* domain */,
 				2AB49B062013A66C0064A42D /* presentation */,
 				2AB49B052013A65C0064A42D /* platform */,
-				2AB49AD72013A5F00064A42D /* AppDelegate.swift */,
-				2AB49AD92013A5F00064A42D /* ViewController.swift */,
 				2AB49ADB2013A5F00064A42D /* Main.storyboard */,
 				2AB49ADE2013A5F00064A42D /* Assets.xcassets */,
 				2AB49AE02013A5F00064A42D /* LaunchScreen.storyboard */,
@@ -159,8 +163,10 @@
 		2AB49B052013A65C0064A42D /* platform */ = {
 			isa = PBXGroup;
 			children = (
+				2AB49AD72013A5F00064A42D /* AppDelegate.swift */,
 				2AB49B0C2013A6950064A42D /* connectors */,
 				2AB49B0B2013A6900064A42D /* views */,
+				2AB49AD92013A5F00064A42D /* ViewController.swift */,
 			);
 			path = platform;
 			sourceTree = "<group>";
@@ -176,7 +182,10 @@
 		2AB49B072013A6730064A42D /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				2AB49B1E2013BE680064A42D /* EntityGateway.swift */,
+				2AB49B1A2013B7040064A42D /* entities */,
 				2AB49B092013A6820064A42D /* useCase */,
+				2AB49B182013B6A20064A42D /* Handler.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -222,11 +231,27 @@
 		2AB49B0D2013A87D0064A42D /* remoteDS */ = {
 			isa = PBXGroup;
 			children = (
-				2AB49B0E2013A9150064A42D /* RandomUserService.swift */,
+				2AB49B1D2013BD5C0064A42D /* network */,
 				2AB49B142013B0660064A42D /* RemoteDataSource.swift */,
 				2AB49B162013B0730064A42D /* RandomUser.swift */,
 			);
 			path = remoteDS;
+			sourceTree = "<group>";
+		};
+		2AB49B1A2013B7040064A42D /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				2AB49B1B2013B7300064A42D /* User.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		2AB49B1D2013BD5C0064A42D /* network */ = {
+			isa = PBXGroup;
+			children = (
+				2AB49B0E2013A9150064A42D /* RandomUserService.swift */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 		430794ABCFE5C666427A3D81 /* Pods */ = {
@@ -548,9 +573,12 @@
 				2AB49B172013B0730064A42D /* RandomUser.swift in Sources */,
 				2AB49ADA2013A5F00064A42D /* ViewController.swift in Sources */,
 				2AB49AD82013A5F00064A42D /* AppDelegate.swift in Sources */,
+				2AB49B1F2013BE680064A42D /* EntityGateway.swift in Sources */,
 				2AB49B0F2013A9150064A42D /* RandomUserService.swift in Sources */,
 				2AB49B132013B0260064A42D /* UserRepository.swift in Sources */,
+				2AB49B1C2013B7300064A42D /* User.swift in Sources */,
 				2AB49B152013B0660064A42D /* RemoteDataSource.swift in Sources */,
+				2AB49B192013B6A20064A42D /* Handler.swift in Sources */,
 				2AB49B112013AEA60064A42D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
