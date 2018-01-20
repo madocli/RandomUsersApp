@@ -97,6 +97,10 @@
 		2AB49AD62013A5F00064A42D /* RandomUsersApp */ = {
 			isa = PBXGroup;
 			children = (
+				2AB49B082013A67A0064A42D /* data */,
+				2AB49B072013A6730064A42D /* domain */,
+				2AB49B062013A66C0064A42D /* presentation */,
+				2AB49B052013A65C0064A42D /* platform */,
 				2AB49AD72013A5F00064A42D /* AppDelegate.swift */,
 				2AB49AD92013A5F00064A42D /* ViewController.swift */,
 				2AB49ADB2013A5F00064A42D /* Main.storyboard */,
@@ -123,6 +127,66 @@
 				2AB49AF92013A5F10064A42D /* Info.plist */,
 			);
 			path = RandomUsersAppUITests;
+			sourceTree = "<group>";
+		};
+		2AB49B052013A65C0064A42D /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				2AB49B0C2013A6950064A42D /* connectors */,
+				2AB49B0B2013A6900064A42D /* views */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		2AB49B062013A66C0064A42D /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2AB49B0A2013A6880064A42D /* presenters */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		2AB49B072013A6730064A42D /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				2AB49B092013A6820064A42D /* useCase */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		2AB49B082013A67A0064A42D /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		2AB49B092013A6820064A42D /* useCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = useCase;
+			sourceTree = "<group>";
+		};
+		2AB49B0A2013A6880064A42D /* presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenters;
+			sourceTree = "<group>";
+		};
+		2AB49B0B2013A6900064A42D /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		2AB49B0C2013A6950064A42D /* connectors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = connectors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
